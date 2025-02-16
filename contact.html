@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Green Horizons Lawn Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-green-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Jalal's Lawn Care</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="services.html" class="hover:underline">Services</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-4xl font-bold text-green-700 mb-8 text-center">Contact Us</h1>
+            <div class="max-w-2xl mx-auto">
+                <form id="contact-form" class="space-y-4">
+                    <div>
+                        <label for="name" class="block mb-2 font-semibold">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 font-semibold">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block mb-2 font-semibold">Phone</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 font-semibold">Message</label>
+                        <textarea id="message" name="message" required rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition duration-300">Send Message</button>
+                    </div>
+                </form>
+                <div class="mt-8 text-center">
+                    <h2 class="text-2xl font-semibold text-green-700 mb-2">Contact Information</h2>
+                    <p class="mb-2">Phone: 0421 792 910</p>
+                    <p>Email: info@jalalslawncare.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-green-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Jalal's Lawn Care. All rights reserved.</p>
+            <p>Phone: 0421 792 910</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
